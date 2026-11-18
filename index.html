@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Cyber Riddle - Teka-Teki Hacker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Halaman Utama -->
+        <div id="start-screen" class="screen">
+            <h1>CYBER RIDDLE</h1>
+            <p>Pecahkan 5 teka-teki logika pemrograman & sistem untuk membobol sistem pusat.</p>
+            <button id="start-btn">MULAI DEKRIPSI</button>
+        </div>
+
+        <!-- Halaman Permainan / Soal -->
+        <div id="quiz-screen" class="screen hidden">
+            <div class="hud">
+                <span>Level: <b id="current-level">1</b>/5</span>
+                <span>Skor: <b id="score">0</b></span>
+            </div>
+            <div class="terminal-box">
+                <p id="riddle-question">Memuat data teka-teki...</p>
+                <input type="text" id="answer-input" placeholder="Masukkan jawaban..." autocomplete="off">
+                <button id="submit-btn">KIRIM JAWABAN</button>
+            </div>
+            <p id="feedback" class="feedback"></p>
+        </div>
+
+        <!-- Halaman Selesai / Menang -->
+        <div id="win-screen" class="screen hidden">
+            <h2>AKSES DITERIMA! 🔓</h2>
+            <p>Selamat, kamu berhasil meretas seluruh teka-teki sistem!</p>
+            <p>Skor Akhir: <span id="final-score">0</span></p>
+            <button id="restart-btn">ULANGI MISI</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
